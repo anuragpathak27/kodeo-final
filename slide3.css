@@ -1,0 +1,105 @@
+/* Styles for the slider container */
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Styles for individual slides */
+.slide {
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for slide content */
+.slide-content {
+    position: relative;
+}
+
+.slide-content h2 {
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+/* Styles for the image container */
+.image-container {
+    /* border: 2px solid black; Add border to the image container */
+    border-radius: 10px; /* Rounded corners for the image container */
+    overflow: hidden; /* Hide overflow to keep border within the container */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* Darker shadow for the image container */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for navigation buttons */
+.prev-button,
+.next-button {
+    background-color: transparent;
+    color: #f8ecfd; /* Gold color */
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    color: #5a2f9e; /* Orange color */
+}
+
+/* Autoplay indicator styles */
+.autoplay-indicator {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.autoplay-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #FF69B4; /* Pink color */
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+/* Add animation to autoplay indicator dots */
+.autoplay-dot.active {
+    background-color: #00BFFF; /* Light Blue color */
+}
+
+.slide-img{
+    height: 500px;
+    width: 400px;
+    transition: 0.3s;
+}
+
+.slide-img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    animation-direction: alternate;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="slide3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=Lobster&family=Pacifico&family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    section{
+        position: fixed;
+        background-color: rgb(174, 235, 235);
+        height: 100vh;
+        width: 100%;
+        overflow: hidden; 
+        pointer-events: none;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section h2{
+        font-size: 7em;
+        color: rgb(180, 97, 76);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    section span{
+        position: absolute;
+        bottom: -500px;
+        background-color: transparent;
+        border-radius: 50%;
+        /* box-shadow: inset 0 0 70px 10px rgba(108, 156, 71, 0.364) ; */
+    }
+    @keyframes animation {
+                0% {
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+                99% {
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(-1100%);
+                    opacity: 0;
+                }
+            }
+</style>
+<body>
+    <section><h2></h2></section>
+    <div style="position: relative; z-index: 1;">
+
+    <div class="navbar">
+        <div class="logo">
+            <img class="img" src="logo.jpg" alt="Logo" ><h1 style="color:deepskyblue; font-size: 12px; margin-left:20px; margin-top: 0px; margin-bottom:10px;"> LearnSmartX </h1>
+        </div>
+        <div class="home">
+            <a class="word-navbar" href="index.html">Home</a>
+            <a class="word-navbar" href="login.html ">LogIn</a>
+            <a class="word-navbar mapofindia" href="map.html ">Map</a>
+            <li class="dropdown">
+            <a class="dropbtn word-navbar">Content</a>
+                <div class="dropdown-content">
+                    <a class="drop-a"  href="content1.html">Learn</a>
+                    <a class="drop-a" href="content2.html">Play</a>
+                </div>
+                </li>
+            <a class="word-navbar" href="aboutus.html">AboutUs</a>
+        </div>
+</div>
+<br>
+<br>
+
+
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <div class="slide-content">
+                <h2 style="color: black; font-family: 'Kalam', cursive;">Accessibility</h2>
+                <br>
+                <img class="slide-img" src="1.jpg" alt="Slide 1">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 style="color: black; font-family: 'Kalam', cursive;">Interactive GamePlay</h2>
+                <br>
+                <div class="image-container">
+                <img class="slide-img" src="2.jpg" alt="Slide 2">
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 style="color: black; font-family: 'Kalam', cursive;">Legal Support</h2>
+                <br>
+                <div class="image-container">
+                <img class="slide-img" src="3.jpg" alt="Slide 3">
+            </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 style="color: black; font-family: 'Kalam', cursive;">Modular Learning</h2>
+                <br>
+                <div class="image-container">
+                <img class="slide-img" src="4.jpg" alt="Slide 4">
+            </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <button class="prev-button" onclick="prevSlide()">&#10094;</button>
+    <button class="next-button" onclick="nextSlide()">&#10095;</button>
+ -->
+
+    <div class="skills"> 
+        <div class="skill-row1">
+                <img class="img1" src="home1.jpg" height="200px" width="300px" alt="">
+                 <h3>Right to Education</h3>
+          <p class="description1">The "Right to Education" is a fundamental human right recognized by the United Nations and many countries around the world. It is enshrined in international agreements and national laws to ensure that every individual, regardless of their background, has access to quality education.
+           <br> UNIVERSAL ACCESS: The Right to Education ensures that education is accessible to all without discrimination based on factors such as gender, race, ethnicity, disability, or socioeconomic status.
+            <br>
+            FREE AND COMPULSORY EDUCATION: In many countries, the Right to Education includes provisions for free and compulsory education for children up to a certain age, typically primary and secondary education.
+            <br>
+            QUALITY EDUCATION: The Right to Education encompasses not only access but also the quality of education. It emphasizes the importance of providing a meaningful and relevant education that equips individuals with necessary skills and knowledge.</p>
+      </div>
+        <div class="skill-row2">
+          <img class="img2" src="home2.jpg" height="200px" width="300px" alt="">
+          <h3>Girl Education</h3>
+          <p>Girl education, also known as female education or women's education, refers to the provision of educational opportunities and resources to girls and women. It is a crucial aspect of promoting gender equality, empowering women, and advancing societies in various ways. 
+<br>
+            EMPOWERMENT: Education empowers girls and women by providing them with knowledge, skills, and confidence. It enables them to make informed decisions about their lives, health, and future.
+   <br>         
+            GENDER EQUALITY: Education is a fundamental tool in promoting gender equality. When girls have equal access to education, it helps break down traditional gender roles and expectations.
+  <br>          
+            ECONOMIC OPPORTUNITIES: Education opens up economic opportunities for girls and women. Educated women are more likely to secure higher-paying jobs and contribute to the economic development of their communities and nations.
+      <br>      
+            REDUCED CHILD MARRIAGE: Girl education is often associated with a decrease in child marriage rates. When girls stay in school longer, they are more likely to delay marriage and childbirth.</p>
+        </div>
+      </div>
+</div>
+
+
+
+<footer>
+    <br>
+    <div class="social-media">
+        <a href="https://www.instagram.com"><img class="logo_img" src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><img  class="logo_img" src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com"><img   class="logo_img" src="youtube.png" alt="YouTube"></a>
+    </div>
+    <div style="font-family: 'Kalam', cursive;" class="copyright">
+        &copy; 2023 LearnSmartX<br>
+        learn smarter, achieve greater
+    </div>
+</footer>
+</div> 
+
+
+    <script>
+        function createBubble() {
+            let section = document.querySelector('section');
+            let createElement = document.createElement('span');
+            let size = Math.random()*200;
+            let color = Math.round(Math.random()*132);
+            let colors = Math.round(Math.random()*132);
+            let colorss = Math.round(Math.random()*132);
+            let s = Math.round(Math.random()*2);
+            let ss = Math.round(Math.random()*2);
+            let sss = Math.round(Math.random()*2);
+            let o = Math.random()*2;
+            createElement.style.animation="animation 9s linear infinite";
+            createElement.style.height= 180 + size + 'px';
+            createElement.style.width= 180 + size + 'px';
+            createElement.style.left= Math.random() * innerWidth +'px';
+            let a=  `inset 0 0 60px 10px rgba(${color*s}, ${colors*ss}, ${colorss*sss}, ${o})` ;
+            console.log(a)
+            createElement.style.boxShadow=`inset 0 0 70px 10px rgba(${color*s}, ${colors*ss}, ${colorss*sss}, ${o})` ;
+
+
+            section.appendChild(createElement)
+            setTimeout(() => {
+                createElement.remove();
+            }, 6000);
+
+        }
+
+        setInterval(() => {
+            createBubble()
+        }, 200);
+    </script>
+
+    <script src="slide.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="contentstyle1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=Lobster&family=Pacifico&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    
+        section{
+            position: fixed;
+            background-color: rgb(174, 235, 235);
+            height: 100vh;
+            width: 100%;
+            overflow: hidden; 
+            pointer-events: none;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section h2{
+            font-size: 7em;
+            color: rgb(180, 97, 76);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        section span{
+            position: absolute;
+            bottom: -500px;
+            background-color: transparent;
+            border-radius: 50%;
+            /* box-shadow: inset 0 0 70px 10px rgba(108, 156, 71, 0.364) ; */
+        }
+        @keyframes animation {
+                    0% {
+                        transform: translateY(0%);
+                        opacity: 1;
+                    }
+                    99% {
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: translateY(-1100%);
+                        opacity: 0;
+                    }
+                }
+    </style>
+    <body>
+        <section><h2></h2></section>
+        <div style="position: relative; z-index: 1;">
+    <div class="navbar">
+        <div class="logo">
+            <img class="img" src="logo.jpg" alt="Logo" >
+            
+        </div>
+        <div class="home">
+            <a class="word-navbar" href="index.html">Home</a>
+            <a class="word-navbar" href="login.html ">LogIn</a>
+            <a class="word-navbar mapofindia" href="map.html ">Map</a>
+            <li class="dropdown">
+                <a class="dropbtn word-navbar">Content</a>
+                    <div class="dropdown-content">
+                        <a class="drop-a"  href="content1.html">Learn</a>
+                        <a class="drop-a" href="content2.html">Play</a>
+                    </div>
+                    </li>
+            <a class="word-navbar" href="aboutus.html">AboutUs</a>
+        </div>
+</div>
+
+<br>
+<br>
+
+
+<div class="thumbnail">
+    <a class="thumbnail-a" href="video.html"><img  class="thumbnail-img" src="video1image.png" alt="Video Thumbnail"></a>
+       
+</div>
+
+<br>
+
+<div class="start">
+<a href="quiz.html">Start Quiz</a> 
+</div>
+<br>
+
+<div class="thumbnail">
+    <a class="thumbnail-a" href="video2.html"><img  class="thumbnail-img" src="video2image.png" alt="Video Thumbnail"></a>
+       
+</div>
+
+<br>
+
+<div class="start">
+<a href="quiz2.html">Start Quiz</a> 
+</div>
+</div>
+<br>
+<br>
+<footer>
+    <br>
+    <div class="social-media">
+        <a href="https://www.instagram.com"><img class="logo_img" src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><img  class="logo_img" src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com"><img   class="logo_img" src="youtube.png" alt="YouTube"></a>
+    </div>
+    <div style="font-family: 'Kalam', cursive;" class="copyright">
+        &copy; 2023 LearnSmartX<br>
+        learn smarter, achieve greater
+    </div>
+</footer>
+</body>
+</html>
